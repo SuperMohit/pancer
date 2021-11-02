@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reader-deployment
+  labels:
+    app: reader
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: reader
+  template:
+    metadata:
+      labels:
+        app: reader
+    spec:
+      containers:
+        - name: reader
+          image: mohittalniya/reader:latest
+          ports:
+            - containerPort: 8082
+          imagePullPolicy: Always
+

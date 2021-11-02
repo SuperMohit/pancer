@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: clear-deployment
+  labels:
+    app: clear
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: clear
+  template:
+    metadata:
+      labels:
+        app: clear
+    spec:
+      containers:
+        - name: clear
+          image: mohittalniya/clear:latest
+          ports:
+            - containerPort: 8083
+          imagePullPolicy: Always
+

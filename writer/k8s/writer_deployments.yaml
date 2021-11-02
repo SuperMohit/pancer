@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: writer-deployment
+  labels:
+    app: writer
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: writer
+  template:
+    metadata:
+      labels:
+        app: writer
+    spec:
+      containers:
+        - name: writer
+          image: mohittalniya/writer:latest
+          ports:
+            - containerPort: 8082
+          imagePullPolicy: Always
+

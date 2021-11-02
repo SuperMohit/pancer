@@ -17,7 +17,9 @@
 ## Usage
 
 ```sh
-1. Deploy Redis in k8s cluster using helm command 2. deploy 3 service in k8s cluster 3. Execute the REST api  
+1. Deploy Redis in k8s cluster using helm command
+2. deploy 3 service in k8s cluster 
+3. Execute the REST api  
 ```
 
 ## Author

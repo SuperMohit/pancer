@@ -18,7 +18,8 @@
 ## Usage
 
 ```sh
-1. Deploy Redis in k8s cluster using helm command
+1. Deploy Redis in k8s cluster using helm command 
+(https://github.com/bitnami/charts/tree/master/bitnami/redis/#installing-the-chart)
 2. deploy 3 service in k8s cluster 
 3. Execute the REST api  
 ```

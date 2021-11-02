@@ -11,7 +11,8 @@
 ## Install
 
 ```sh
-1. Use makefile to create containers 2. kubectl to create deployment and service
+1. Use makefile to create containers 
+2. kubectl to create deployment and service
 ```
 
 ## Usage
